@@ -13,7 +13,7 @@ function SearchBar(props) {
             setValue(target.value);
         }
     };
-    const handleSearch=(e)=>{
+    const handleSearch=()=>{
         const currentPageNo = 1;
         props.applySorting({
           ...props.filters,

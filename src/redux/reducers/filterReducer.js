@@ -13,7 +13,7 @@ const filterInitialState={
 
 export default function filterReducer(state= filterInitialState, action) {
 	switch (action.type) {
-		case FETCH_CHARACTER_LIST_SUCCESS:
+		case FETCH_CHARACTER_LIST_SUCCESS:{
 			const filters = action.payload.response.filters;
 			return {
 				...state,
@@ -26,6 +26,7 @@ export default function filterReducer(state= filterInitialState, action) {
 					origin: filters.filters.origin
 				}
 			};
+		}
 		default:
 			return state
 	}

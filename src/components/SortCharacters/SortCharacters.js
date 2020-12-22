@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {applySortingAsync} from "../../redux/actions/actions";
+import PropTypes from 'prop-types';
+
 
 function SortCharacters(props) {
 
@@ -36,6 +38,12 @@ const mapDispatchToProps = (dispatch) => {
 		applySorting: (filters) => dispatch(applySortingAsync(filters))
 	};
 };
+
+SortCharacters.propTypes={
+	filters:PropTypes.array,
+	currentPageNo:PropTypes.number,
+	order:PropTypes.string
+}
 export default connect(
 		mapStateToProps,
 		mapDispatchToProps,

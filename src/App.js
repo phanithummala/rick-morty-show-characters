@@ -1,10 +1,10 @@
+import React from 'react'
 import './App.css';
 import CharactersList from './components/CharacterList/CharactersList';
 import CharactersFilter from './components/Filters/CharactersFilter';
 import Header from './components/Header/Header';
 import SearchBar from './components/SearchBar';
 import SortCharacters from './components/SortCharacters/SortCharacters';
-
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
             <CharactersList />              
             </div>
           </div>
+          
         </section>
   );
 }
