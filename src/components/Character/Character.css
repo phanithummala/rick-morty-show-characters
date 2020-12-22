@@ -1,0 +1,55 @@
+.imgContainer{
+    position: relative;
+}
+.imgContainer img{
+    width:100%;
+    border-radius: 10px 10px 0 0;
+
+}
+.info-details{
+    background: rgba(17,17,17,0.5);
+    position: absolute;
+    padding: 5px;
+    bottom: 0px;
+    width: 100%;
+}
+.info-details .char-id{
+    color: #dfdff7;
+}
+.charName{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.card {
+    color:white;
+    font-size: 14px;
+    margin: 5px;
+    height:445px;
+    background-color:rgba(0,0,0,0)!important;
+}
+.description hr{
+    border-top:1px solid rgb(167 166 166 / 10%);
+    margin:0px!important
+}
+
+.description{
+    background: transparent;
+    background-color:rgb(51, 50, 50);
+    padding: 10px;
+    height: 250px;
+    border-radius: 0 0 10px 10px;
+    
+}
+
+.description-item{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px;
+    color:darkgray;
+}
+
+.description-item .item2{
+    text-align: right;
+    color:#bc7e0d;
+    word-break: break-word;
+}
